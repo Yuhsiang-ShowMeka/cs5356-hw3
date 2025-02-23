@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    padding: 2rem;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.bento-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 100px;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.bento-item {
+    background: white;
+    border-radius: 24px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 1rem;
+}
+
+.bento-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Hero Section */
+.hero {
+    grid-column: span 8;
+    grid-row: span 3;
+    background: linear-gradient(135deg, #FF9A9E, #FAD0C4);
+    color: white;
+}
+
+/* Side Section */
+.side-card {
+    grid-column: span 4;
+    grid-row: span 3;
+    background: #E0C3FC;
+    color: #2d3436;
+}
+
+/* Bottom Cards */
+.card-wide {
+    grid-column: span 6;
+    grid-row: span 3;
+    background: #A1C4FD;
+}
+
+.card-square {
+    grid-column: span 3;
+    grid-row: span 3;
+    background: #FFECD2;
+}
+
+.card-tall {
+    grid-column: span 3;
+    grid-row: span 3;
+    background: #84FAB0;
+}
+
+/* Content Styling */
+.bento-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.bento-item p {
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    margin-top: 0;
+}
+
+/* 基本圖片樣式 */
+.bento-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .bento-container {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .hero {
+        grid-column: span 6;
+        grid-row: span 3;
+    }
+
+    .side-card {
+        grid-column: span 6;
+        grid-row: span 3;
+    }
+
+    .card-wide {
+        grid-column: span 6;
+        grid-row: span 3;
+    }
+
+    .card-square,
+    .card-tall {
+        grid-column: span 3;
+        grid-row: span 3;
+    }
+}
+
+@media (max-width: 640px) {
+    .bento-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero,
+    .side-card,
+    .card-wide,
+    .card-square,
+    .card-tall {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+}
