@@ -7,39 +7,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <h1 class="main-title">Yuhsiang's Favorite Anime:ちいかわ</h1>
     <div class="bento-container">
-        <!-- Hero Section -->
-        <div class="bento-item hero">
-            <img src="images/chiikawa.jpg" alt="Featured Project Image">
-            <h2>Featured Project</h2>
-            <p>A showcase of my latest work and achievements in web development and design.</p>
+        <!-- Chiikawa -->
+        <div class="bento-item chiikawa-item" data-video="https://www.youtube.com/embed/UWB9R-evZ7w">
+            <img src="images/chiikawa.jpg" alt="Chiikawa" class="bento-image">
+            <h2>Chiikawa</h2>
+            <p>Something cute and small.</p>
         </div>
 
-        <!-- Side Section -->
-        <div class="bento-item side-card">
-            <img src="images/hachiware.jpg" alt="About Me Image">
-            <h2>About Me</h2>
-            <p>Creative developer with a passion for building beautiful, functional websites.</p>
+        <!-- Hachiware -->
+        <div class="bento-item hachiware-item" data-video="https://www.youtube.com/embed/mnO0uTHjQCQ">
+            <img src="images/hachiware.jpg" alt="Hachiware" class="bento-image">
+            <h2>Hachiware</h2>
+            <p>Chiikawa's best friend.</p>
         </div>
 
-        <!-- Bottom Cards -->
-        <div class="bento-item card-wide">
-            <img src="images/usagi.jpg" alt="Services Image">
-            <h2>My Services</h2>
-            <p>Web Development, UI/UX Design, and Digital Solutions</p>
+        <!-- Usagi -->
+        <div class="bento-item usagi-item" data-video="https://www.youtube.com/embed/xt4TSJGkGts">
+            <img src="images/usagi.jpg" alt="Usagi" class="bento-image">
+            <h2>Usagi</h2>
+            <p>My role model, the fearless usagi.</p>
         </div>
 
-        <div class="bento-item card-square">
-            <img src="images/kurimanju.jpg" alt="Blog Image">
-            <h2>Blog</h2>
-            <p>Thoughts and insights about modern web development</p>
+        <!-- Kurimanju -->
+        <div class="bento-item kurimanju-item" data-video="https://www.youtube.com/embed/ULe8tYb7r1c">
+            <img src="images/kurimanju.jpg" alt="Kurimanju" class="bento-image">
+            <h2>Kurimanju</h2>
+            <p>The most chilled out character in the story.</p>
         </div>
 
-        <div class="bento-item card-tall">
-            <img src="images/momonga.jpg" alt="Contact Image">
-            <h2>Contact</h2>
-            <p>Let's work together on your next project</p>
+        <!-- Momonga -->
+        <div class="bento-item momonga-item" data-video="https://www.youtube.com/embed/LYLvhYIHOC0">
+            <img src="images/momonga.jpg" alt="Momonga" class="bento-image">
+            <h2>Momonga</h2>
+            <p>This character capture our darkest/cutest side.</p>
         </div>
     </div>
+
+    <!-- 先載入 YouTube API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    
+    <!-- 再載入我們的腳本 -->
+    <script src="script.js"></script>
 </body>
 </html>
